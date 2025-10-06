@@ -11,9 +11,9 @@ Este proyecto se enfoca en el monitoreo ambiental mediante sensores de temperatu
 </p>
 
 
-El diagrama anterior muestra cómo los sensores de tempertura y humedad, denotados como "Sensor T y H", y el sensor de monóxido de carbono, denotado como "Sensor CO", envian datos al Módulo ESP, el cual recolecta estos datos. Estos datos pueden ser enviados a la nube pra poder ser almacenados. Luego, de ser necesario, se puede actuar sobre un módulo Relay, para activar algún sistema de potencia, como por ejemplo, un ventilador.
+El diagrama anterior muestra cómo los sensores de tempertura y humedad, denotados como "Sensor T y H", y el sensor de monóxido de carbono, denotado como "Sensor CO", envian datos al Módulo ESP, el cual recolecta estos datos. Estos datos pueden ser enviados a la nube para poder ser almacenados. Luego, de ser necesario, se puede actuar sobre un módulo Relay, para activar algún sistema de potencia, como por ejemplo, un ventilador.
 
-El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura y humedad, por lo tanto si se quiere obtener los datos de dichos sensores, se puede acceder de la siguiente forma:
+El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura y humedad, por lo tanto si se quiere obtener los datos de dichos sensores, se puede acceder a su información mediante los siguientes tópicos:
 
 ### __Tópicos__:
 
@@ -26,4 +26,5 @@ Monóxido de Carbono: CO
 Relay: Relay_in
 
 De esta forma, para tomar los datos, basta con acceder a uno de estos tópicos. 
+
 

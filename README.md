@@ -3,7 +3,7 @@ En este repositorio se aloja toda la información pertinente al desarrollo de un
 
 ## __Introducción:__
 
-Este proyecto se enfoca en el monitoreo ambiental mediante sensores de temperatura, humedad y monóxido de carbono. Mediante el muestreo de estras tres variables, se puede conocer cómo cambia el clima dentro de una habitación. Para esto, el sistema se puede comportar de acuerdo al siguiente diagrama en bloques:
+Este proyecto se enfoca en el monitoreo ambiental mediante sensores de temperatura, humedad y monóxido de carbono. A través del muestreo de estras tres variables, se puede conocer cómo cambia el clima dentro de una habitación. Para esto, el sistema se puede comportar de acuerdo al siguiente diagrama en bloques:
 
 
 <p align="center">
@@ -11,11 +11,11 @@ Este proyecto se enfoca en el monitoreo ambiental mediante sensores de temperatu
 </p>
 
 
-El diagrama anterior muestra cómo los sensores de tempertura y humedad, denotados como "Sensor T y H", y el sensor de monóxido de carbono, denotado como "Sensor CO", envian datos al Módulo ESP, el cual recolecta estos datos. Estos datos pueden ser enviados a la nube para poder ser almacenados. Luego, de ser necesario, se puede actuar sobre un módulo Relay, para activar algún sistema de potencia, como por ejemplo, un ventilador.
+La figura anterior muestra cómo los sensores de tempertura y humedad, denotados como "Sensor T y H", y el sensor de monóxido de carbono, denotado como "Sensor CO", envian datos al Módulo ESP, el cual recolecta estos datos. Estos datos pueden ser enviados a la nube para poder ser almacenados. Luego, de ser necesario, se puede actuar sobre un módulo Relay, para activar algún sistema de potencia, como por ejemplo, un ventilador.
 
-El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura y humedad, por lo tanto si se quiere obtener los datos de dichos sensores, se puede acceder a su información mediante los tópicos explicados en la siguiente sección.
+El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura, humedad y monóxido de carbono, por lo tanto, si se quiere acceder a estos, se lo puede hacer mediante los tópicos explicados en la siguiente sección.
 
-Por último, con los datos recolectados, se accede a utilizar algoritmos de Inteligencia Artificial (IA), para poder realizar predicciones de comportamientos, analizar patrones y estadisticas de cómo se comportan las variables climáticas sensadas.
+Por último, con los datos recolectados, se accede a utilizar algoritmos de Inteligencia Artificial (IA), para poder realizar predicciones de comportamientos, analizar patrones y estudiar estadisticas de cómo se comportan las variables climáticas sensadas.
 
 En este sentido entonces se puede ver la aplicación de IoT + IA que se refleja en este proyecto.
 

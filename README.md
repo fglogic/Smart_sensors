@@ -13,7 +13,15 @@ Este proyecto se enfoca en el monitoreo ambiental mediante sensores de temperatu
 
 El diagrama anterior muestra cómo los sensores de tempertura y humedad, denotados como "Sensor T y H", y el sensor de monóxido de carbono, denotado como "Sensor CO", envian datos al Módulo ESP, el cual recolecta estos datos. Estos datos pueden ser enviados a la nube para poder ser almacenados. Luego, de ser necesario, se puede actuar sobre un módulo Relay, para activar algún sistema de potencia, como por ejemplo, un ventilador.
 
-El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura y humedad, por lo tanto si se quiere obtener los datos de dichos sensores, se puede acceder a su información mediante los siguientes tópicos:
+El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos de temperatura y humedad, por lo tanto si se quiere obtener los datos de dichos sensores, se puede acceder a su información mediante los tópicos explicados en la siguiente sección.
+
+Por último, con los datos recolectados, se accede a utilizar algoritmos de Inteligencia Artificial (IA), para poder realizar predicciones de comportamientos, analizar patrones y estadisticas de cómo se comportan las variables climáticas sensadas.
+
+En este sentido entonces se puede ver la aplicación de IoT + IA que se refleja en este proyecto.
+
+## __Casos de uso:__
+
+El sistema se encuentra sensando todo el tiempo las variables comentadas. Para acceder a estos datos, dado que se trata de una arquitectura basada en MQTT, resulta necesario obtener los tópicos pertinetes, los cuales son:
 
 ### __Tópicos__:
 
@@ -25,6 +33,6 @@ Monóxido de Carbono: CO
 
 Relay: Relay_in
 
-De esta forma, para tomar los datos, basta con acceder a uno de estos tópicos. 
+De esta forma, para tomar los datos, basta con acceder a uno de estos tópicos. Luego, se pueden guardar estos datos en alguna base de datos particular, que el usuario desee.
 
 

@@ -17,7 +17,7 @@ Todos estos datos son enviados a la nube mediante el módulo ESP, para poder ser
 
 El Módulo ESP posee conexión mediante WiFi, lo cual posibilita utilizar protocolos MQTT y HTTP, entre otros. Actualmente el Módulo utiliza MQTT para transmitir los datos sensados, por lo tanto, si se quiere acceder a estos, se lo puede hacer mediante los tópicos explicados en la siguiente sección.
 
-Por último, con los datos recolectados, se accede a utilizar algoritmos de Inteligencia Artificial (IA), para poder realizar predicciones de comportamientos, analizar patrones y estudiar estadisticas de cómo se comportan las variables climáticas sensadas. Este procesamiento de IA, puede actuar en la nube sin problemas. También es importante aclarar que se pueden utilizar algoritmos de control para realiar la acción comentada.
+Por último, con los datos recolectados, se accede a utilizar algoritmos de Inteligencia Artificial (IA), para poder realizar predicciones de comportamientos, analizar patrones y estudiar estadisticas de cómo se comportan las variables climáticas sensadas. Por ejemplo, se pueden realizar análisis predictivos de manera de poder anticipar una acción y actuar sobre la ventilación del lugar. Cabe aclarar que este procesamiento de IA, puede actuar en la nube sin problemas. También es importante mencionar que se pueden utilizar algoritmos de control para realiar la acción comentada.
 
 En este sentido entonces se puede ver la aplicación de IoT + IA que se refleja en este proyecto.
 
